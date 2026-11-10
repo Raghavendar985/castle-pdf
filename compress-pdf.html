@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Compress PDF Online Without Uploading | Castle PDF</title>
+<meta name="description" content="Reduce PDF file size in your browser. Pick a quality, compare the before and after size, then save. Your file is never uploaded.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Compress PDF Online Without Uploading | Castle PDF">
+<meta property="og:description" content="Reduce PDF file size in your browser. Pick a quality, compare the before and after size, then save. Your file is never uploaded.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<div class="rank" aria-hidden="true"></div>
+<header class="mast"><a class="brandlink" href="index.html" aria-label="Castle PDF home"><span class="brand sm">Castle <span>PDF</span></span></a></header>
+<nav class="tabs" aria-label="PDF tools">
+<a href="images-to-pdf.html"><span class="t-piece" aria-hidden="true">&#9823;&#xFE0E;</span><span class="t-name">Images to PDF</span><span class="t-sub">Pawn</span></a>
+<a href="compress-pdf.html" aria-current="page"><span class="t-piece" aria-hidden="true">&#9822;&#xFE0E;</span><span class="t-name">Compress</span><span class="t-sub">Knight</span></a>
+<a href="split-pdf.html"><span class="t-piece" aria-hidden="true">&#9821;&#xFE0E;</span><span class="t-name">Split</span><span class="t-sub">Bishop</span></a>
+<a href="merge-pdf.html"><span class="t-piece" aria-hidden="true">&#9819;&#xFE0E;</span><span class="t-name">Merge</span><span class="t-sub">Queen</span></a>
+</nav>
+<div id="lib-error" class="lib-error" hidden>The PDF libraries did not load. Check your connection and reload the page.</div>
+<section class="panel" id="p-compress">
+    <div class="head">
+      <div class="eyebrow"><span class="glyph" aria-hidden="true">&#9822;&#xFE0E;</span>Knight · jumps the file down to size</div>
+      <h1>Compress a PDF</h1>
+      <p class="what">Each page is re-drawn at a lower resolution and saved as a JPEG. Scanned files and photo-heavy PDFs shrink the most.</p>
+    </div>
+    <div class="drop" data-drop="compress">
+      <input type="file" id="in-compress" class="sr" accept="application/pdf,.pdf">
+      <label class="drop-label" for="in-compress"><strong><u>Choose a PDF</u> or drop it here</strong><span class="hint">One file at a time</span></label>    </div>
+    <ul class="files" aria-label="Selected file"></ul>
+    <fieldset>
+      <legend>Quality</legend>
+      <div class="choices">
+        <label class="choice"><input type="radio" name="cq" value="small"><span><b>Smallest</b><i>72 dpi · JPEG 50</i></span></label>
+        <label class="choice"><input type="radio" name="cq" value="balanced" checked><span><b>Balanced</b><i>100 dpi · JPEG 65</i></span></label>
+        <label class="choice"><input type="radio" name="cq" value="sharp"><span><b>Sharp</b><i>144 dpi · JPEG 82</i></span></label>
+      </div>
+    </fieldset>
+    <p class="note">Compressed pages become images, so the text in the result cannot be selected or searched. Keep your original if you need that.</p>
+    <div class="actions"><button type="button" class="btn run" disabled>Compress PDF</button></div>
+    <p class="msg" role="status"></p>
+    <div class="prog" hidden><progress max="1" value="0"></progress><span class="prog-text" role="status"></span></div>
+    <div class="result" hidden></div>
+  </section>
+<span class="private"><b class="king" aria-hidden="true">&#9818;&#xFE0E;</b>The king is your file. It stays on your device and is never uploaded.</span>
+<section class="info">
+<div>
+<h2>How to compress a PDF</h2>
+<ol class="steps"><li>Choose your PDF. Click Choose a PDF or drop the file on the box.</li><li>Pick a quality. Smallest uses 72 dpi and JPEG 50, Balanced uses 100 dpi and JPEG 65, and Sharp uses 144 dpi and JPEG 82.</li><li>Click Compress PDF and wait while each page is processed.</li><li>Compare the original and result sizes, then click Save PDF.</li></ol>
+</div>
+<div class="faq">
+<h2>Questions</h2>
+<details><summary>How much smaller will my PDF get?</summary><p>It depends on the file. Scans and PDFs full of photos usually shrink a lot. A PDF that is mostly text may not shrink, or may even grow, because each page becomes an image. Castle PDF shows the before and after size so you can decide.</p></details>
+<details><summary>Can I search the text in a compressed PDF?</summary><p>No. Compressed pages are images, so the text cannot be selected or searched. If you need searchable text, keep the original, or use Split and Merge, which keep text selectable.</p></details>
+<details><summary>Which quality should I choose?</summary><p>Start with Balanced. Use Smallest when you have a tight size limit, such as an email attachment. Use Sharp when small print must stay readable.</p></details>
+<details><summary>Can I compress a password-protected PDF?</summary><p>Not yet. Remove the password in the app that created the file, then try again.</p></details>
+<details><summary>Are my files uploaded anywhere?</summary><p>No. Everything happens in your browser, so your files never leave your device. The page does load its PDF libraries and fonts from public content networks when it opens, but your documents are not part of that.</p></details>
+</div>
+<div>
+<h2>More PDF tools</h2>
+<div class="related"><a href="images-to-pdf.html">Images to PDF</a><a href="split-pdf.html">Split PDF</a><a href="merge-pdf.html">Merge PDF</a></div>
+</div>
+</section>
+<footer>
+<p class="foot"><a href="index.html">Castle PDF</a> <a href="images-to-pdf.html">Images to PDF</a> <a href="compress-pdf.html">Compress PDF</a> <a href="split-pdf.html">Split PDF</a> <a href="merge-pdf.html">Merge PDF</a></p>
+<p class="foot">The Pawn, Knight, Bishop and Queen do the work. The King is your file.</p>
+</footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Images to PDF Converter (JPG, PNG, WebP) | Castle PDF</title>
+<meta name="description" content="Convert JPG, PNG, WebP and GIF images to one PDF in your browser. Set the order, page size and quality. Your images are never uploaded.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Images to PDF Converter (JPG, PNG, WebP) | Castle PDF">
+<meta property="og:description" content="Convert JPG, PNG, WebP and GIF images to one PDF in your browser. Set the order, page size and quality. Your images are never uploaded.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<div class="rank" aria-hidden="true"></div>
+<header class="mast"><a class="brandlink" href="index.html" aria-label="Castle PDF home"><span class="brand sm">Castle <span>PDF</span></span></a></header>
+<nav class="tabs" aria-label="PDF tools">
+<a href="images-to-pdf.html" aria-current="page"><span class="t-piece" aria-hidden="true">&#9823;&#xFE0E;</span><span class="t-name">Images to PDF</span><span class="t-sub">Pawn</span></a>
+<a href="compress-pdf.html"><span class="t-piece" aria-hidden="true">&#9822;&#xFE0E;</span><span class="t-name">Compress</span><span class="t-sub">Knight</span></a>
+<a href="split-pdf.html"><span class="t-piece" aria-hidden="true">&#9821;&#xFE0E;</span><span class="t-name">Split</span><span class="t-sub">Bishop</span></a>
+<a href="merge-pdf.html"><span class="t-piece" aria-hidden="true">&#9819;&#xFE0E;</span><span class="t-name">Merge</span><span class="t-sub">Queen</span></a>
+</nav>
+<div id="lib-error" class="lib-error" hidden>The PDF libraries did not load. Check your connection and reload the page.</div>
+<section class="panel" id="p-images">
+    <div class="head">
+      <div class="eyebrow"><span class="glyph" aria-hidden="true">&#9823;&#xFE0E;</span>Pawn · promotes to a PDF</div>
+      <h1>Images to PDF</h1>
+      <p class="what">Turn JPG, PNG, WebP and GIF images, such as photos, scans and screenshots, into one PDF, one image per page, in the order you set.</p>
+    </div>
+    <div class="drop" data-drop="images">
+      <input type="file" id="in-images" class="sr" accept="image/*" multiple>
+      <label class="drop-label" for="in-images"><strong><u>Choose images</u> or drop them here</strong><span class="hint">JPG, PNG, WebP, GIF. Phone photos are rotated correctly.</span></label>    </div>
+    <ul class="files" aria-label="Images to convert"></ul>
+    <div class="row">
+      <div class="field"><label for="ps">Page size</label>
+        <select id="ps"><option value="fit">Match the image</option><option value="a4">A4 · 595 × 842 pt</option><option value="letter">Letter · 612 × 792 pt</option></select></div>
+      <label class="check"><input type="checkbox" id="margin" checked> 10 mm margin</label>
+    </div>
+    <fieldset>
+      <legend>Image quality</legend>
+      <div class="choices">
+        <label class="choice"><input type="radio" name="iq" value="high"><span><b>High</b><i>2400 px · JPEG 90</i></span></label>
+        <label class="choice"><input type="radio" name="iq" value="medium" checked><span><b>Medium</b><i>1600 px · JPEG 75</i></span></label>
+        <label class="choice"><input type="radio" name="iq" value="small"><span><b>Small</b><i>1100 px · JPEG 55</i></span></label>
+      </div>
+    </fieldset>
+    <div class="actions"><button type="button" class="btn run" disabled>Create PDF</button></div>
+    <p class="msg" role="status"></p>
+    <div class="prog" hidden><progress max="1" value="0"></progress><span class="prog-text" role="status"></span></div>
+    <div class="result" hidden></div>
+  </section>
+<span class="private"><b class="king" aria-hidden="true">&#9818;&#xFE0E;</b>The king is your file. It stays on your device and is never uploaded.</span>
+<section class="info">
+<div>
+<h2>How to turn images into a PDF</h2>
+<ol class="steps"><li>Add your images. Click Choose images or drop them on the box. You can add many at once.</li><li>Set the order. Use the arrow buttons to move an image up or down. Each image becomes one page.</li><li>Choose the page size and quality. Match the image makes each page the size of its picture. A4 and Letter fit every image on a standard page, with an optional 10 mm margin.</li><li>Click Create PDF, then Save PDF.</li></ol>
+</div>
+<div class="faq">
+<h2>Questions</h2>
+<details><summary>Which image types can I use?</summary><p>JPG, PNG, WebP and GIF. HEIC photos from some iPhones may not open in every browser, so export them as JPG first.</p></details>
+<details><summary>Will my phone photos come out the right way up?</summary><p>Yes. Castle PDF reads the rotation stored in each photo and applies it.</p></details>
+<details><summary>Does the quality setting change my pictures?</summary><p>Yes. Each image is saved as a JPEG at the size and quality you pick. High keeps up to 2400 pixels on the longest side, Medium 1600 and Small 1100. Choose High for photos you plan to print.</p></details>
+<details><summary>What happens to transparent PNG images?</summary><p>Transparent areas become white.</p></details>
+<details><summary>Are my files uploaded anywhere?</summary><p>No. Everything happens in your browser, so your files never leave your device. The page does load its PDF libraries and fonts from public content networks when it opens, but your documents are not part of that.</p></details>
+</div>
+<div>
+<h2>More PDF tools</h2>
+<div class="related"><a href="compress-pdf.html">Compress PDF</a><a href="split-pdf.html">Split PDF</a><a href="merge-pdf.html">Merge PDF</a></div>
+</div>
+</section>
+<footer>
+<p class="foot"><a href="index.html">Castle PDF</a> <a href="images-to-pdf.html">Images to PDF</a> <a href="compress-pdf.html">Compress PDF</a> <a href="split-pdf.html">Split PDF</a> <a href="merge-pdf.html">Merge PDF</a></p>
+<p class="foot">The Pawn, Knight, Bishop and Queen do the work. The King is your file.</p>
+</footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

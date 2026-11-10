@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Merge PDF Files Online Without Uploading | Castle PDF</title>
+<meta name="description" content="Combine several PDFs into one file in your browser. Set the order, merge and save. Text stays selectable, and nothing is uploaded.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Merge PDF Files Online Without Uploading | Castle PDF">
+<meta property="og:description" content="Combine several PDFs into one file in your browser. Set the order, merge and save. Text stays selectable, and nothing is uploaded.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<div class="rank" aria-hidden="true"></div>
+<header class="mast"><a class="brandlink" href="index.html" aria-label="Castle PDF home"><span class="brand sm">Castle <span>PDF</span></span></a></header>
+<nav class="tabs" aria-label="PDF tools">
+<a href="images-to-pdf.html"><span class="t-piece" aria-hidden="true">&#9823;&#xFE0E;</span><span class="t-name">Images to PDF</span><span class="t-sub">Pawn</span></a>
+<a href="compress-pdf.html"><span class="t-piece" aria-hidden="true">&#9822;&#xFE0E;</span><span class="t-name">Compress</span><span class="t-sub">Knight</span></a>
+<a href="split-pdf.html"><span class="t-piece" aria-hidden="true">&#9821;&#xFE0E;</span><span class="t-name">Split</span><span class="t-sub">Bishop</span></a>
+<a href="merge-pdf.html" aria-current="page"><span class="t-piece" aria-hidden="true">&#9819;&#xFE0E;</span><span class="t-name">Merge</span><span class="t-sub">Queen</span></a>
+</nav>
+<div id="lib-error" class="lib-error" hidden>The PDF libraries did not load. Check your connection and reload the page.</div>
+<section class="panel" id="p-merge">
+    <div class="head">
+      <div class="eyebrow"><span class="glyph" aria-hidden="true">&#9819;&#xFE0E;</span>Queen · gathers every file into one</div>
+      <h1>Merge PDFs</h1>
+      <p class="what">Add two or more PDFs, put them in order, and get one file. Text stays selectable and searchable.</p>
+    </div>
+    <div class="drop" data-drop="merge">
+      <input type="file" id="in-merge" class="sr" accept="application/pdf,.pdf" multiple>
+      <label class="drop-label" for="in-merge"><strong><u>Choose PDFs</u> or drop them here</strong><span class="hint">Use the arrows to reorder</span></label>    </div>
+    <ul class="files" aria-label="Files to merge"></ul>
+    <div class="actions"><button type="button" class="btn run" disabled>Merge PDFs</button><span class="hint merge-hint">Add at least two files.</span></div>
+    <p class="msg" role="status"></p>
+    <div class="prog" hidden><progress max="1" value="0"></progress><span class="prog-text" role="status"></span></div>
+    <div class="result" hidden></div>
+  </section>
+<span class="private"><b class="king" aria-hidden="true">&#9818;&#xFE0E;</b>The king is your file. It stays on your device and is never uploaded.</span>
+<section class="info">
+<div>
+<h2>How to merge PDF files</h2>
+<ol class="steps"><li>Add two or more PDFs. Click Choose PDFs or drop them on the box.</li><li>Set the order with the arrow buttons. The first file in the list comes first in the result.</li><li>Click Merge PDFs.</li><li>Save merged.pdf.</li></ol>
+</div>
+<div class="faq">
+<h2>Questions</h2>
+<details><summary>Does merging change the quality?</summary><p>No. Pages are copied as they are, so text stays selectable and images keep their quality.</p></details>
+<details><summary>Do bookmarks and form fields carry over?</summary><p>They may not. Castle PDF copies the pages, so check the result if your files rely on bookmarks or fillable fields.</p></details>
+<details><summary>How many files can I merge?</summary><p>Castle PDF sets no limit. The limit is your device memory, so very large files take longer and may fail on a phone.</p></details>
+<details><summary>Can I merge password-protected PDFs?</summary><p>Not yet. Remove the password in the app that created each file, then try again.</p></details>
+<details><summary>Are my files uploaded anywhere?</summary><p>No. Everything happens in your browser, so your files never leave your device. The page does load its PDF libraries and fonts from public content networks when it opens, but your documents are not part of that.</p></details>
+</div>
+<div>
+<h2>More PDF tools</h2>
+<div class="related"><a href="images-to-pdf.html">Images to PDF</a><a href="compress-pdf.html">Compress PDF</a><a href="split-pdf.html">Split PDF</a></div>
+</div>
+</section>
+<footer>
+<p class="foot"><a href="index.html">Castle PDF</a> <a href="images-to-pdf.html">Images to PDF</a> <a href="compress-pdf.html">Compress PDF</a> <a href="split-pdf.html">Split PDF</a> <a href="merge-pdf.html">Merge PDF</a></p>
+<p class="foot">The Pawn, Knight, Bishop and Queen do the work. The King is your file.</p>
+</footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
